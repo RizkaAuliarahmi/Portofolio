@@ -1,0 +1,174 @@
+body {
+  font-weight: 100;
+  font-size: 72px;
+  font-family: "Canela Deck Web";
+  background-color: #fffbf6;
+  color: black;
+  padding-top: 60px;
+}
+
+.font-size-17 {
+  font-size: 20px; }
+
+.font-size-30 {
+  font-size: 20px;
+}
+  
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img-fluid {
+  max-width: 100%;
+  height: auto; 
+}
+
+.section-welcome {
+  display: flex;
+  justify-content: left;
+  height: 100%; }
+  .section-welcome row {
+    align-items: center; }
+  .section-welcome social-icons{
+    height: 100px;
+  }
+  .section-welcome a {
+    margin-bottom: 10px;
+    text-decoration: none; }
+  .section-welcome img {
+    width: 50px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out; }
+    .section-welcome img:hover {
+      transform: scale(1.2); }
+
+.section-about {
+  display: flex;
+  justify-content: left;
+  height: 100%; }
+  .section-about h1 {
+    margin-top: 50px; }
+  .section-about a {
+    margin-bottom: 50px;
+    color: white;
+    background-color: orangered }
+  .section-about img {
+    /* border-radius: 50%; */
+    margin-top: 55px;
+    overflow: hidden;
+    width: 1440px;
+    height: auto;
+  }
+
+.section-technology {
+  display: flex;
+  height: 100%; }
+  .section-technology .container {
+    justify-content: center; }
+  .section-technology img{
+    max-width: 80px;
+    max-height: 80px;
+    margin: 10px;
+    object-fit: contain; }
+
+.section-project {
+  display: flex;
+  height: 100%; }
+  .section-project h1{
+    justify-content: center;
+    margin-bottom: 20px; }
+  .section-project a {
+    margin-bottom: 50px;
+    color: white;
+    background-color: orangered;
+  }
+
+.section-school-project{
+  display: flex;
+  height: 100%;
+  justify-content: center; }
+  .section-school-project .container {
+    justify-content: center; }
+  .section-school-project td {
+    font-size: 20px;
+  }
+
+@media (max-width: 991.98px) {
+  .m-mobile{
+    margin-top:30px;
+  } 
+}
+
+.scroll-down-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.scroll-down-icon a {
+  text-decoration: none;
+}
+
+.scroll-down-icon i {
+  font-size: 2rem;
+  color: black;
+  transition: transform 0.3s ease-in-out;
+}
+
+.scroll-down-icon i:hover {
+  transform: scale(1.2);
+}
+
+.tab {
+  margin-left: 20px;
+}
+
+.text-tech {
+  color: green;
+}
+
+nav {
+  background-color: #fffbf6;
+  padding: 10px 0;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  color: black;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.logo:hover {
+  color: black;
+  text-decoration: none;
+}
+
+nav div {
+  display: flex;
+  justify-content: center;
+}
+
+nav a {
+  color: black;
+  margin: 0 15px;
+  font-size: 17px;
+}
+
+nav a:hover {
+  color: orange;
+}
+
+nav a.active {
+  color: orangered;
+}
