@@ -9,10 +9,6 @@ body {
 
 .font-size-17 {
   font-size: 20px; }
-
-.font-size-30 {
-  font-size: 20px;
-}
   
 .container {
   display: flex;
@@ -56,7 +52,6 @@ body {
     color: white;
     background-color: orangered }
   .section-about img {
-    /* border-radius: 50%; */
     margin-top: 55px;
     overflow: hidden;
     width: 1440px;
@@ -96,31 +91,33 @@ body {
     font-size: 20px;
   }
 
+.section-contact {
+  display: flex;
+  height: 100%;
+   }
+  .section-contact .container {
+    width: 1000px;
+  }
+  .section-contact row {
+    align-items: center;
+    
+  }
+  .section-contact a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    /* color: black; */
+  }
+  .section-contact img {
+    margin-right: 30px;
+    padding-bottom: 10px;
+  }
+
+
 @media (max-width: 991.98px) {
   .m-mobile{
     margin-top:30px;
   } 
-}
-
-.scroll-down-icon {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
-.scroll-down-icon a {
-  text-decoration: none;
-}
-
-.scroll-down-icon i {
-  font-size: 2rem;
-  color: black;
-  transition: transform 0.3s ease-in-out;
-}
-
-.scroll-down-icon i:hover {
-  transform: scale(1.2);
 }
 
 .tab {
@@ -144,9 +141,10 @@ nav {
 }
 
 .logo {
-  color: black;
+  color: white;
   text-decoration: none;
   font-size: 17px;
+  background-color: orangered;
 }
 
 .logo:hover {
@@ -163,6 +161,7 @@ nav a {
   color: black;
   margin: 0 15px;
   font-size: 17px;
+  
 }
 
 nav a:hover {
@@ -171,4 +170,14 @@ nav a:hover {
 
 nav a.active {
   color: orangered;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+}
+
+.contact-item img {
+  margin-right: 30px;
+  padding-bottom: 10px;
 }
