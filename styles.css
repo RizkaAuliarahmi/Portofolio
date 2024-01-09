@@ -172,6 +172,12 @@ nav a.active {
   color: orangered;
 }
 
+@media (max-width: 768px) {
+  nav {
+      display: none;
+  }
+}
+
 .contact-item {
   display: flex;
   align-items: center;
@@ -181,3 +187,4 @@ nav a.active {
   margin-right: 30px;
   padding-bottom: 10px;
 }
+
