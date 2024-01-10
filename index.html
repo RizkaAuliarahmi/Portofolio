@@ -15,7 +15,9 @@
 		<nav>
 			<div class="container">
 				<!-- <a href="#" class="logo">Rizka Auliarahmi</a> -->
-				<a target="BLANK" href="doc/CV.pdf" style="border-radius:3px;" class="btn btn-sm btn-outline-warning logo" ><span class="icon-arrow-down"></span> <span> Download my CV</span></a>
+				<button onclick="window.open('doc/CV-RizkaAuliarahmi.pdf', '_blank');" class="btn btn-sm btn-outline-warning logo">
+					<span>Download my CV</span>
+				 </button>
 				<div>
 					<!-- <a href="#section-welcome" class="nav-link">Welcome</a> -->
 					<a href="#section-about" class="nav-link">Tentang</a>
@@ -56,15 +58,17 @@
 					  <img src="images/profil.jpg" alt="Image" class="img-fluid">
 					</div>
 					<div  class="col-md-10 m-mobile text-left">
-					  <h1 class="font-weight-bold mb-4 ">Tentang Saya</h1>
-					  <hr style="border:1px solid black">
-					  <p class="font-size-17 text-justify">
-						Hallo! Saya Rizka Auliarahmi, lulusan D4 Teknik Informatika Politeknik Negeri Bandung 2023, dengan pengalaman sebagai intern quality assurance dan technical writer freelancer. Selain aktif terlibat dalam proyek kuliah yang memperkaya keterampilan teknis saya, pengalaman saya dalam berpartisipasi dalam proyek juga mengasah kemampuan berkomunikasi dan kolaborasi dalam tim.
+					  	<h1 class="font-weight-bold mb-4 ">Tentang Saya</h1>
+					  	<hr style="border:1px solid black">
+						<p class="font-size-17 text-justify">
+						Halo! Saya Rizka Auliarahmi, lulusan D4 Teknik Informatika Politeknik Negeri Bandung 2023, dengan pengalaman sebagai intern quality assurance dan technical writer freelancer. Selain aktif terlibat dalam proyek kuliah yang memperkaya keterampilan teknis saya, pengalaman saya dalam berpartisipasi dalam proyek juga mengasah kemampuan berkomunikasi dan kolaborasi dalam tim.
 						</p>
-					<!-- <p class="font-size-17 text-justify"> 
-						Selanjutnya, mari kita eksplorasi lebih lanjut mengenai teknologi yang telah saya pahami dan proyek-proyek yang telah saya jalani.
-					</p> -->
-					<a target="BLANK" href="doc/CV.pdf" style="border-radius:3px;" class="btn btn-sm btn-outline-warning" ><span class="icon-arrow-down"></span> <span> Download my CV</span></a>
+						<!-- <p class="font-size-17 text-justify"> 
+							Selanjutnya, mari kita eksplorasi lebih lanjut mengenai teknologi yang telah saya pahami dan proyek-proyek yang telah saya jalani.
+						</p> -->
+						<a target="BLANK" href="doc/CV-RizkaAuliarahmi.pdf" style="border-radius:3px;" class="btn btn-sm btn-outline-warning">
+							<span> Download my CV</span>
+						</a>
 					</div>
 				  </div>
 			</div>
@@ -74,7 +78,7 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-lg-12">
-						<h1 class="font-weight-bold mb-4 ">Teknologi</h1>
+						<h1 class="font-weight-bold mb-4">Teknologi</h1>
 						<hr style="border:1px solid black">
 						<p class="mb-4 text-left font-size-17 text-justify">
 							Saya berhasil mengerjakan berbagai proyek yang melibatkan penggunaan teknologi berikut
@@ -115,14 +119,14 @@
 					</div>
 					<div  class="col-lg-5 m-mobile text-left">
 						<h2 class="mb-4 font-weight-bold mt-5">Sweetscape: Website Toko Kue Online</h2>
-						  <p class="font-size-17 text-justify">
-							Sweetscape adalah proyek simulasi toko kue online yang menonjolkan kemampuan pengembangan web menggunakan teknologi .NET dan React.js. Dengan desain responsif untuk optimalisasi pengalaman pengguna di berbagai perangkat, Sweetscape menampilkan fitur e-commerce, seperti katalog pencarian, filter, urutan, dan halaman pada daftar produk. Meskipun bersifat fiktif tanpa tujuan bisnis nyata, proyek ini mencakup manajemen keranjang belanja, alamat pengiriman, serta autentikasi pengguna untuk meningkatkan personalisasi.</p> 
-						  </p>
-						  <p class="font-size-17 mb-4 text-tech">
-							.NET 7  |  React  |  SQLite  |  Material-UI  |  JWT  |  Axios  |  Typescript
-						</p>
-						  <a target="BLANK" href="https://github.com/RizkaAuliarahmi/Sweetscape" style="border-radius:3px;" class="btn btn-outline-warning mr-3" ><span class="icon-github"></span> <span> Visit Github Project</span></a>  
-						  <br/>
+						  	<p class="font-size-17 text-justify">
+								Sweetscape adalah proyek simulasi toko kue online yang menonjolkan kemampuan pengembangan web menggunakan teknologi .NET dan React.js. Dengan desain responsif untuk optimalisasi pengalaman pengguna di berbagai perangkat, Sweetscape menampilkan fitur e-commerce, seperti katalog pencarian, filter, urutan, dan halaman pada daftar produk. Meskipun bersifat fiktif tanpa tujuan bisnis nyata, proyek ini mencakup manajemen keranjang belanja, alamat pengiriman, serta autentikasi pengguna untuk meningkatkan personalisasi.</p> 
+						  	</p>
+						  	<p class="font-size-17 mb-4 text-tech">
+								.NET 7  |  React  |  SQLite  |  Material-UI  |  JWT  |  Axios  |  Typescript
+							</p>
+						  	<a target="BLANK" href="https://github.com/RizkaAuliarahmi/Sweetscape" style="border-radius:3px;" class="btn btn-outline-warning mr-3" ><span class="icon-github"></span> <span> Visit Github Project</span></a>  
+						  	<br/>
 						</div>
 					  <br/>
 					</div>
@@ -227,42 +231,6 @@
 			crossorigin="anonymous"
 			referrerpolicy="no-referrer"
 		></script>
-		<script>
-		$(document).ready(function () {
-			$('nav a').on('click', function (event) {
-				event.preventDefault();
-				var target = $(this).attr('href');
-				$.scrollify.move(target, 0, function () {
-					updateActiveNav();
-				});
-			});
-
-        $.scrollify({
-            section: ".scroll",
-            sectionName: "section-name",
-            easing: "easeOutExpo",
-            scrollSpeed: 1100,
-            offset: 0,
-            scrollbars: true,
-            setHeights: true,
-            overflowScroll: true,
-            updateHash: false,
-            touchScroll: true,
-        });
-
-        $(window).on('scroll', function () {
-            var scrollPosition = $(window).scrollTop();
-            $('section').each(function () {
-                var offset = $(this).offset().top;
-                var sectionId = $(this).attr('data-section-name');
-
-                if (scrollPosition + 20 >= offset && scrollPosition < offset + $(this).height()) {
-                    $('nav a').removeClass('active');
-                    $('nav a[href="#' + sectionId + '"]').addClass('active');
-                }
-            });
-        });
-    });
-		</script>
+		<script src="script.js"></script>
 	</body>
 </html>
